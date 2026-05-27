@@ -1,6 +1,7 @@
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'Payment Website',
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="h-full flex flex-col">
         <Navbar />
+        <Analytics />
 
         <main className="flex-1">
           {children}
